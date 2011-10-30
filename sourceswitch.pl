@@ -3,19 +3,20 @@ use warnings;
 use Cwd;
 use File::Copy;
 
-# edit with your paths
-my $user = 'eithans';
-my $view = 'android_platform_178';
+### edit with your own paths
 
-my $destination = "\\\\marvell\\israel\\LinuxDev\\swdev_platdev\\$user\\$view\\src\\kernel\\linux-2.6.32";
-# my $destination = "\\\\Pt-dt0033\\code\\tboot\\obm_v_122\\OBM";
-my $root = substr($ARGV[0],1,-1);
+### add as many vars as needed, i.e.:
+# my $var_a = 'eithans';
+# my $var_b = 'android_platform_178';
 
+### create the default destination with your vars, i.e.:
+# my $destination = "\\\\home\\src\\$a\\$b\\src\\kernel\\linux-2.6.32";
 
+my $root = substr($ARGV[0],1,-1); # get root of source tree from command line
 
-
+# Print welcome info
 print "\n";
-print "Source Switcher\n";
+print "Source Switch\n";
 print "---------------\n";
 print "Source is :      $root\n";
 print "Destination is : $destination\ \n";
