@@ -1,8 +1,3 @@
-use strict;
-use warnings;
-use Cwd;
-use File::Copy;
-
 ### edit with your own paths
 
 ### add as many vars as needed, i.e.:
@@ -11,6 +6,13 @@ use File::Copy;
 
 ### create the default destination with your vars, i.e.:
 # my $destination = "\\\\home\\src\\$a\\$b\\src\\kernel\\linux-2.6.32";
+
+
+use strict;
+use warnings;
+use Cwd;
+use File::Copy;
+
 
 my $root = substr($ARGV[0],1,-1); # get root of source tree from command line
 
