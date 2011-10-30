@@ -22,7 +22,8 @@ print "Source is :      $root\n";
 print "Destination is : $destination\ \n";
 print "\n";
 print "OK? (y=copy files, l=list files, n=abort): ";
-my $ask = <STDIN>;
+
+my $ask = <STDIN>; #get input from console
 chomp $ask;
 print "\n";
 my $islist = "list";
